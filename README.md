@@ -63,7 +63,7 @@ flowchart LR
 ## Getting started
 
 ### 1. Node firmware
-1. Install the Arduino libraries **MCCI LoRaWAN LMIC** (or IBM LMIC), **OneWire** and **DallasTemperature**.
+1. Install the Arduino libraries **MCCI LoRaWAN LMIC** (or IBM LMIC), **OneWire** and **DallasTemperature**. With the MCCI library, select the **EU868** region and the **SX1276** radio in `project_config/lmic_project_config.h`.
 2. Register an **ABP** device in the TTN console, then paste its `NWKSKEY`, `APPSKEY` and `DEVADDR` into the sketch.
 3. Wire the DS18B20 data line to **D8**, with a 4.7 kΩ pull-up to 5 V.
 4. Upload the sketch to the Arduino Uno fitted with the Dragino LoRa Shield.
